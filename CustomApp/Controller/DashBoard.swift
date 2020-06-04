@@ -17,7 +17,10 @@ class DashBoard: BaseVC {
     let heading = UILabel(),
     username = UITextField(),
     password = UITextField()
+    var testMyLabel = MyUILabel()
+   var nameField = MyUITextField()
     
+//    let loveFirst = MyUILabel(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,8 +73,26 @@ class DashBoard: BaseVC {
         heading.textColor = .red
         heading.font = UIFont.boldSystemFont(ofSize: 40)
         
-        ///heading.center.x -= view.bounds.width
+        self.testMyLabel = MyUILabel(frame: .zero, text: "Awesome", textColor: .blue, fontSize: UIFont.systemFont(ofSize: 30), textAlign: .center)
+        view.addSubview(testMyLabel)
+        testMyLabel.topAnchor.constraint(equalTo: heading.bottomAnchor, constant: 20).isActive = true
+        testMyLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        testMyLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        testMyLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
+//        testMyLabel.backgroundColor = .red
         
+        let leftIcon = UIImage(named: "checkbox-on")!
+        self.nameField = MyUITextField(frame: .zero, placeholderText: "Email", leftIcon )
+      
+//        nameField.keyboardType = .decimalPad
+//        nameField.isSecureTextEntry = true
+//        self.nameField.isIconShow = true
+        view.addSubview(nameField)
+        nameField.topAnchor.constraint(equalTo: testMyLabel.bottomAnchor, constant: 20).isActive = true
+               nameField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+               nameField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+               nameField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+//        nameField.
     }
 }
 

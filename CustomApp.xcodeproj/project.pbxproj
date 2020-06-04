@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D32C18F24857AA900B189D3 /* MyUILable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32C18E24857AA900B189D3 /* MyUILable.swift */; };
 		1DA24D062476DA240064BC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D052476DA240064BC7A /* AppDelegate.swift */; };
 		1DA24D082476DA240064BC7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D072476DA240064BC7A /* SceneDelegate.swift */; };
 		1DA24D0A2476DA240064BC7A /* DashBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D092476DA240064BC7A /* DashBoard.swift */; };
@@ -34,9 +35,11 @@
 		1DA24D492478267C0064BC7A /* RainbowCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D482478267C0064BC7A /* RainbowCircle.swift */; };
 		1DA24D4B247837B60064BC7A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D4A247837B60064BC7A /* BaseVC.swift */; };
 		1DA24D4D24783C920064BC7A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D4C24783C920064BC7A /* CustomButton.swift */; };
+		1DE19CD724896850009418F2 /* MyUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE19CD624896850009418F2 /* MyUITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D32C18E24857AA900B189D3 /* MyUILable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUILable.swift; sourceTree = "<group>"; };
 		1DA24D022476DA240064BC7A /* CustomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA24D052476DA240064BC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DA24D072476DA240064BC7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		1DA24D482478267C0064BC7A /* RainbowCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowCircle.swift; sourceTree = "<group>"; };
 		1DA24D4A247837B60064BC7A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		1DA24D4C24783C920064BC7A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1DE19CD624896850009418F2 /* MyUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D32C18D24857A9000B189D3 /* CustomObjects */ = {
+			isa = PBXGroup;
+			children = (
+				1D32C18E24857AA900B189D3 /* MyUILable.swift */,
+				1DE19CD624896850009418F2 /* MyUITextField.swift */,
+			);
+			path = CustomObjects;
+			sourceTree = "<group>";
+		};
 		1DA24CF92476DA240064BC7A = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +111,7 @@
 		1DA24D042476DA240064BC7A /* CustomApp */ = {
 			isa = PBXGroup;
 			children = (
+				1D32C18D24857A9000B189D3 /* CustomObjects */,
 				1DA24D47247826730064BC7A /* Helper */,
 				1DA24D192476DBA00064BC7A /* CustomTabBar */,
 				1DA24D052476DA240064BC7A /* AppDelegate.swift */,
@@ -256,9 +270,11 @@
 				1DA24D492478267C0064BC7A /* RainbowCircle.swift in Sources */,
 				1DA24D4B247837B60064BC7A /* BaseVC.swift in Sources */,
 				1DA24D0A2476DA240064BC7A /* DashBoard.swift in Sources */,
+				1D32C18F24857AA900B189D3 /* MyUILable.swift in Sources */,
 				1DA24D202477DFD50064BC7A /* MyViewDelegate.swift in Sources */,
 				1DA24D222477EED80064BC7A /* ProfileVC.swift in Sources */,
 				1DA24D1D2476DFB30064BC7A /* HomeVC.swift in Sources */,
+				1DE19CD724896850009418F2 /* MyUITextField.swift in Sources */,
 				1DA24D1B2476DBBC0064BC7A /* BottomTabView.swift in Sources */,
 				1DA24D242477F0050064BC7A /* SettingsVC.swift in Sources */,
 				1DA24D4D24783C920064BC7A /* CustomButton.swift in Sources */,
