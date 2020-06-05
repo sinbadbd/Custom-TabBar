@@ -25,6 +25,7 @@ class MyUILabel: UILabel {
         self.textColor = textColor
         self.font = fontSize
         self.textAlignment = textAlign!
+        self.numberOfLines = 0
     }
     
 }

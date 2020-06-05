@@ -10,12 +10,13 @@ import UIKit
 class MyButton: UIButton {
     
     // var buttonTitle:String!
-    convenience init(frame:CGRect = .zero, setTitle:String = "") {
+    convenience init(frame:CGRect = .zero, setTitle:String = "", bgColor:UIColor? = .init(), textColor:UIColor? = .init()) {
         self.init(frame : frame)
         if frame == .zero {
             self.translatesAutoresizingMaskIntoConstraints = false
         }
-        self.backgroundColor = .red
+        self.setTitleColor(textColor, for: .normal)
+        self.backgroundColor = bgColor
         self.layer.cornerRadius = 4
         self.setTitle(setTitle.uppercased(), for: .normal)
     }

@@ -50,7 +50,7 @@ class DashBoard: BaseVC {
         self.nameField = MyUITextField(frame: .zero, placeholderText: "Email", leftIconName)
         nameField.keyboardType = .emailAddress
         view.addSubview(nameField)
-        nameField.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding:.init(top: 80, left: 20, bottom: 0, right: 20), size: .init(width: nameField.frame.width, height: 40))
+        nameField.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding:.init(top: 100, left: 20, bottom: 0, right: 20), size: .init(width: nameField.frame.width, height: 40))
         
         let leftIconEmail = UIImage(named: "archive-2")!
         self.passwordField = MyUITextField( placeholderText: "password", leftIconEmail)
@@ -59,7 +59,7 @@ class DashBoard: BaseVC {
         view.addSubview(passwordField)
         passwordField.anchor(top: nameField.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding:.init(top: 20, left: 20, bottom: 0, right: 20), size: .init(width: passwordField.frame.width, height: 40))
         
-        self.submitButton  = MyButton(setTitle: "Submit")
+        self.submitButton  = MyButton( setTitle: "Submit", bgColor: .blue, textColor: .white)
         view.addSubview(submitButton)
         submitButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 20).isActive = true
         submitButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
@@ -70,34 +70,36 @@ class DashBoard: BaseVC {
         
     }
     @objc func handleSubmit(sender:UIButton){
-        
-        
         UIView.animate(withDuration: 0.5, animations: {
             sender.alpha = 0.5
         }) { (Bool) in
             sender.alpha = 0.8
-            let name =  self.nameField.text
-            let pass =  self.passwordField.text
+            var name =  self.nameField.text ?? ""
+            var pass =  self.passwordField.text ?? ""
+            
+            self.showAlertMessage()
             if name == "" || pass == "" {
                 print("Missing Field")
-                
-                self.view.addSubview(self.alerView)
-                //                self.alerView.translatesAutoresizingMaskIntoConstraints = false
-                
-                self.alerView.anchor(top: self.view.safeAreaLayoutGuide.topAnchor,
-                                     leading: self.view.leadingAnchor,
-                                     bottom: self.view.bottomAnchor,
-                                     trailing: self.view.trailingAnchor,
-                                     padding: .init(),
-                                     size: .init(width: self.view.frame.width,
-                                                 height: self.alerView.frame.height)
-                )
-                print(self.alerView)
-                
-                
+                self.alerView.showAlert(title: "Failed 🙁", message: "Missing entry field", alertType: .Failed)
+            }else {
+                self.alerView.showAlert(title: "Success 😁", message: "name: \(name) pass: \(pass)", alertType: .success)
+                name = ""
+                pass = ""
             }
-            print(name!,pass!)
         }
+    }
+    
+    
+    func showAlertMessage(){
+        self.view.addSubview(self.alerView)
+        self.alerView.anchor(top: self.view.safeAreaLayoutGuide.topAnchor,
+                             leading: self.view.leadingAnchor,
+                             bottom: self.view.bottomAnchor,
+                             trailing: self.view.trailingAnchor,
+                             padding: .init(),
+                             size: .init(width: self.view.frame.width,
+                                         height: self.alerView.frame.height)
+        )
         
     }
 }
