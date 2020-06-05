@@ -17,6 +17,16 @@ class AlertView: UIView {
     var desLabel = MyUILabel()
     var submitButton = MyButton()
     
+    
+    let visualEffect : UIVisualEffectView = {
+        let blurEffect = UIBlurEffect(style: .light)
+        let view = UIVisualEffectView(effect: blurEffect)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    
+    
     enum AlertType {
         case success
         case Failed

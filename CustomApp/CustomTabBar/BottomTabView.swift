@@ -175,7 +175,7 @@ class BottomTabView: UIView{
     }
     
     @objc func  handleHomeTap(){
-        let vc = HomeVC()
+        let vc = DashBoard()
         (superview?.next as? UIViewController)?.navigationController?.pushViewController(vc, animated: true)
     }
     

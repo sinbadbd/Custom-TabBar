@@ -25,6 +25,13 @@ class DashBoard: BaseVC {
     
     var alerView = AlertView()
     
+//    let visualEffect : UIVisualEffectView = {
+//        let blurEffect = UIBlurEffect(style: .light)
+//        let view = UIVisualEffectView(effect: blurEffect)
+//        view.translatesAutoresizingMaskIntoConstraints = false
+//        return view
+//    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -32,6 +39,7 @@ class DashBoard: BaseVC {
         isTabBarShow = true
         print(isTabBarShow)
         setupLoginUI()
+        self.navigationController!.navigationBar.isHidden = false
     }
     override func viewWillAppear(_ animated: Bool) {
         isTabBarShow = true
@@ -73,11 +81,12 @@ class DashBoard: BaseVC {
         UIView.animate(withDuration: 0.5, animations: {
             sender.alpha = 0.5
         }) { (Bool) in
-            sender.alpha = 0.8
+            sender.alpha = 1
             var name =  self.nameField.text ?? ""
             var pass =  self.passwordField.text ?? ""
             
             self.showAlertMessage()
+            
             if name == "" || pass == "" {
                 print("Missing Field")
                 self.alerView.showAlert(title: "Failed 🙁", message: "Missing entry field", alertType: .Failed)

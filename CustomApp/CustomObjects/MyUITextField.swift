@@ -20,8 +20,6 @@ class MyUITextField :UITextField {
     convenience init(frame: CGRect = .zero,placeholderText:String? = "placeholderText",_ icon: UIImage?) {
         self.init(frame: frame)
         
-        
-        
         if frame == .zero {
             self.translatesAutoresizingMaskIntoConstraints = false
         }

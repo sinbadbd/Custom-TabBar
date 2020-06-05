@@ -12,6 +12,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor =  .gray
+        self.navigationController!.navigationBar.isHidden = true
     }
     
     

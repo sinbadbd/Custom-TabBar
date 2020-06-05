@@ -18,9 +18,11 @@ class BaseVC: UIViewController {
             print(isTabBarShow)
             setupBottomTabBar()
         }
-        
+//        self.navigationController!.navigationBar.isHidden = false
     }
- 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController!.navigationBar.isHidden = false
+    }
     
     func setupBottomTabBar(){
           view.addSubview(bottomTab)
