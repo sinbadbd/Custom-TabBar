@@ -9,7 +9,7 @@
 import UIKit
 var navController: UINavigationController!
 
-class BottomTabView: UIView , UITabBarControllerDelegate{
+class BottomTabView: UIView{
     
     let homeButton = UIButton(type: .system)
     let profileButton = UIButton(type: .custom)

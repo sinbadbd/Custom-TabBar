@@ -34,8 +34,10 @@
 		1DA24D452477FBB00064BC7A /* browser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA24D422477FBB00064BC7A /* browser@2x.png */; };
 		1DA24D492478267C0064BC7A /* RainbowCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D482478267C0064BC7A /* RainbowCircle.swift */; };
 		1DA24D4B247837B60064BC7A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D4A247837B60064BC7A /* BaseVC.swift */; };
-		1DA24D4D24783C920064BC7A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D4C24783C920064BC7A /* CustomButton.swift */; };
 		1DE19CD724896850009418F2 /* MyUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE19CD624896850009418F2 /* MyUITextField.swift */; };
+		1DE19CD924897DBC009418F2 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE19CD824897DBC009418F2 /* MyButton.swift */; };
+		1DE19CDD2489F36D009418F2 /*  UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE19CDC2489F36C009418F2 /*  UIView+Layout.swift */; };
+		1DE19CE0248A0B45009418F2 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE19CDF248A0B45009418F2 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +70,10 @@
 		1DA24D422477FBB00064BC7A /* browser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser@2x.png"; sourceTree = "<group>"; };
 		1DA24D482478267C0064BC7A /* RainbowCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowCircle.swift; sourceTree = "<group>"; };
 		1DA24D4A247837B60064BC7A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
-		1DA24D4C24783C920064BC7A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		1DE19CD624896850009418F2 /* MyUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITextField.swift; sourceTree = "<group>"; };
+		1DE19CD824897DBC009418F2 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		1DE19CDC2489F36C009418F2 /*  UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " UIView+Layout.swift"; sourceTree = "<group>"; };
+		1DE19CDF248A0B45009418F2 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			children = (
 				1D32C18E24857AA900B189D3 /* MyUILable.swift */,
 				1DE19CD624896850009418F2 /* MyUITextField.swift */,
+				1DE19CD824897DBC009418F2 /* MyButton.swift */,
 			);
 			path = CustomObjects;
 			sourceTree = "<group>";
@@ -122,9 +127,8 @@
 				1DA24D0E2476DA260064BC7A /* Assets.xcassets */,
 				1DA24D102476DA260064BC7A /* LaunchScreen.storyboard */,
 				1DA24D132476DA260064BC7A /* Info.plist */,
-				1DA24D1F2477DFD50064BC7A /* MyViewDelegate.swift */,
 				1DA24D4A247837B60064BC7A /* BaseVC.swift */,
-				1DA24D4C24783C920064BC7A /* CustomButton.swift */,
+				1DA24D1F2477DFD50064BC7A /* MyViewDelegate.swift */,
 			);
 			path = CustomApp;
 			sourceTree = "<group>";
@@ -179,7 +183,9 @@
 		1DA24D47247826730064BC7A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				1DE19CDC2489F36C009418F2 /*  UIView+Layout.swift */,
 				1DA24D482478267C0064BC7A /* RainbowCircle.swift */,
+				1DE19CDF248A0B45009418F2 /* AlertView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -268,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA24D492478267C0064BC7A /* RainbowCircle.swift in Sources */,
+				1DE19CDD2489F36D009418F2 /*  UIView+Layout.swift in Sources */,
 				1DA24D4B247837B60064BC7A /* BaseVC.swift in Sources */,
+				1DE19CD924897DBC009418F2 /* MyButton.swift in Sources */,
 				1DA24D0A2476DA240064BC7A /* DashBoard.swift in Sources */,
 				1D32C18F24857AA900B189D3 /* MyUILable.swift in Sources */,
 				1DA24D202477DFD50064BC7A /* MyViewDelegate.swift in Sources */,
@@ -277,8 +285,8 @@
 				1DE19CD724896850009418F2 /* MyUITextField.swift in Sources */,
 				1DA24D1B2476DBBC0064BC7A /* BottomTabView.swift in Sources */,
 				1DA24D242477F0050064BC7A /* SettingsVC.swift in Sources */,
-				1DA24D4D24783C920064BC7A /* CustomButton.swift in Sources */,
 				1DA24D262477F01B0064BC7A /* OtherVC.swift in Sources */,
+				1DE19CE0248A0B45009418F2 /* AlertView.swift in Sources */,
 				1DA24D062476DA240064BC7A /* AppDelegate.swift in Sources */,
 				1DA24D082476DA240064BC7A /* SceneDelegate.swift in Sources */,
 			);
