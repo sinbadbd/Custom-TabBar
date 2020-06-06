@@ -55,6 +55,8 @@
 		1DD9C439248B75C6004B5EED /* summericons_100px_08@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9C425248B75C6004B5EED /* summericons_100px_08@3x.png */; };
 		1DD9C43A248B75C6004B5EED /* summericons_100px_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9C426248B75C6004B5EED /* summericons_100px_03@2x.png */; };
 		1DD9C43F248B76C1004B5EED /* HorizontalItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9C43E248B76C1004B5EED /* HorizontalItemList.swift */; };
+		1DD9C441248B8499004B5EED /* AnimationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9C440248B8499004B5EED /* AnimationListTableViewCell.swift */; };
+		1DD9C443248BB26B004B5EED /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9C442248BB26B004B5EED /* Helper.swift */; };
 		1DE19CD724896850009418F2 /* MyUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE19CD624896850009418F2 /* MyUITextField.swift */; };
 		1DE19CD924897DBC009418F2 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE19CD824897DBC009418F2 /* MyButton.swift */; };
 		1DE19CDD2489F36D009418F2 /*  UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE19CDC2489F36C009418F2 /*  UIView+Layout.swift */; };
@@ -112,6 +114,8 @@
 		1DD9C425248B75C6004B5EED /* summericons_100px_08@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "summericons_100px_08@3x.png"; sourceTree = "<group>"; };
 		1DD9C426248B75C6004B5EED /* summericons_100px_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "summericons_100px_03@2x.png"; sourceTree = "<group>"; };
 		1DD9C43E248B76C1004B5EED /* HorizontalItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalItemList.swift; sourceTree = "<group>"; };
+		1DD9C440248B8499004B5EED /* AnimationListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationListTableViewCell.swift; sourceTree = "<group>"; };
+		1DD9C442248BB26B004B5EED /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		1DE19CD624896850009418F2 /* MyUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITextField.swift; sourceTree = "<group>"; };
 		1DE19CD824897DBC009418F2 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		1DE19CDC2489F36C009418F2 /*  UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " UIView+Layout.swift"; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 				1DE19CDC2489F36C009418F2 /*  UIView+Layout.swift */,
 				1DA24D482478267C0064BC7A /* RainbowCircle.swift */,
 				1DE19CDF248A0B45009418F2 /* AlertView.swift */,
+				1DD9C442248BB26B004B5EED /* Helper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 		1DD9C43D248B76A0004B5EED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1DD9C440248B8499004B5EED /* AnimationListTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -396,6 +402,8 @@
 				1D32C18F24857AA900B189D3 /* MyUILable.swift in Sources */,
 				1DA24D202477DFD50064BC7A /* MyViewDelegate.swift in Sources */,
 				1DA24D222477EED80064BC7A /* ProfileVC.swift in Sources */,
+				1DD9C443248BB26B004B5EED /* Helper.swift in Sources */,
+				1DD9C441248B8499004B5EED /* AnimationListTableViewCell.swift in Sources */,
 				1DA24D1D2476DFB30064BC7A /* HomeVC.swift in Sources */,
 				1DD9C43F248B76C1004B5EED /* HorizontalItemList.swift in Sources */,
 				1DE19CD724896850009418F2 /* MyUITextField.swift in Sources */,

@@ -17,6 +17,7 @@ class AlertView: UIView {
     var desLabel = MyUILabel()
     var submitButton = MyButton()
     
+    //    var alertView =  AlertView(frame: .zero)
     
     let visualEffect : UIVisualEffectView = {
         let blurEffect = UIBlurEffect(style: .light)
@@ -34,6 +35,9 @@ class AlertView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupUI()
+    }
+    func setupUI(){
         
         addSubview(mainContainer)
         mainContainer.anchor(top: topAnchor,
@@ -68,8 +72,8 @@ class AlertView: UIView {
         statusImage.backgroundColor = .white
         statusImage.centerXInSuperview()
         
-//        statusImage.isUserInteractionEnabled = true
-//        statusImage.addGestureRecognizer(.init(target: self, action: #selector(closeAlert)))
+        //        statusImage.isUserInteractionEnabled = true
+        //        statusImage.addGestureRecognizer(.init(target: self, action: #selector(closeAlert)))
         
         
         self.titleLabel = MyUILabel( text: "Success", textColor: .green, fontSize: UIFont.systemFont(ofSize: 30), textAlign: .center)
@@ -88,8 +92,8 @@ class AlertView: UIView {
         
         submitButton.anchor(top: desLabel.bottomAnchor, leading: contentView.leadingAnchor, bottom: nil, trailing: contentView.trailingAnchor, padding: .init(top: 40, left: 20, bottom: 0, right: 20), size: .init(width: submitButton.frame.width , height: 45))
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:  #selector(closeAlert))
-            submitButton.isUserInteractionEnabled = true
-            submitButton.addGestureRecognizer(tap)
+        submitButton.isUserInteractionEnabled = true
+        submitButton.addGestureRecognizer(tap)
     }
     
     @objc func closeAlert(_ sender: UITapGestureRecognizer? = nil){
@@ -113,6 +117,40 @@ class AlertView: UIView {
             submitButton.setTitle("Close", for: .normal)
         }
     }
+    
+    
+    
+    func showAlertMessage(){
+        print("show message")
+        //        self.addSubview(AlertView .addSubview(superview))
+        //        self.didAddSubview(superview.autoresizesSubviews)
+        //        addSubview(self)
+        // if superview != nil {
+        self.addSubview(.init(frame: .infinite))
+        self.anchor(top: self.superview?.safeAreaLayoutGuide.topAnchor,
+                    leading: self.superview?.leadingAnchor,
+                    bottom: self.superview?.bottomAnchor,
+                    trailing: self.superview?.trailingAnchor,
+                    padding: .init(),
+                    size: .init(width:self.frame.width, height: self.frame.height))
+        
+        //    }
+        
+        //        UIApplication.shared.keyWindow?.addSubview(mainContainer)
+        //        UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        //        UIApplication.shared.windows.a
+        
+        //        UIApplication.shared.windows.first { $0.isKeyWindow }
+        if let app = UIApplication.shared.delegate as? AppDelegate{
+            //            MBProgressHUD.show(text, view:window)
+            addSubview(mainContainer)
+            //            app.addS
+        }
+        
+        
+        
+    }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
