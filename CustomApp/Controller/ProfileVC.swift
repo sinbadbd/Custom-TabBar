@@ -15,6 +15,7 @@ class ProfileVC: BaseVC {
     var addIcon = MyButton()
     
     var topBarHeightCon : NSLayoutConstraint!
+    var TitleCenterY:NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +30,17 @@ class ProfileVC: BaseVC {
         
         topBarHeightCon = topBarView.heightAnchor.constraint(equalToConstant: 60)
         topBarHeightCon.isActive = true
-        topBarView.backgroundColor = .red
+        topBarView.backgroundColor = .lightGray
         
         self.titleLabel = MyUILabel(frame: .zero, text: "Packs List", textColor: .white, fontSize: UIFont.systemFont(ofSize: 18), textAlign: .center)
         
+//        self.titleLabel.co
         topBarView.addSubview(titleLabel)
         titleLabel.anchor(top: nil, leading: nil, bottom: nil, trailing: nil, padding: .init())
         titleLabel.centerInSuperview()
+        
+//        TitleCenterY.constant = titleLabel.center.y
+        
         self.addIcon = MyButton(frame: .zero)
         topBarView.addSubview(addIcon)
         addIcon.anchor(top: nil, leading: nil, bottom: nil, trailing: topBarView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 20), size: .init(width: 20, height: 20))
@@ -52,19 +57,29 @@ class ProfileVC: BaseVC {
         UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 10.0, options: .curveEaseIn,animations: {
             self.isMenuOpen = !self.isMenuOpen
             self.topBarHeightCon.constant = self.isMenuOpen ? 200.0 : 60.0
+            
             self.titleLabel.text = self.isMenuOpen ? "Selected Item" : "Packs Item"
+            
+            self.view.layoutIfNeeded()
             
             let angle: CGFloat = self.isMenuOpen ? .pi / 4 : 0.0
             print(angle)
             self.addIcon.transform = CGAffineTransform(rotationAngle: angle)
-            
+//            self.titleLabel.con
             self.titleLabel.superview?.constraints.forEach { constraint in
                 if constraint.firstItem === self.titleLabel &&
                     constraint.firstAttribute == .centerX {
-                    constraint.constant = self.isMenuOpen ? -100.0 : 0.0
+                    constraint.constant = self.isMenuOpen ? -120.0 : 0.0
                     return
-                } }
-            self.view.layoutIfNeeded()
+                }
+                if constraint.identifier == "identifier" {
+                    constraint.isActive = false
+                //add new constraint
+//                    titleLabel.CenterY = isMenuOpen.CenterY * 1.0 + 0.0
+//                  continue
+                    return
+                }
+            }
         },completion: nil)
     }
     
