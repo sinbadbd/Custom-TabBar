@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1D32C18F24857AA900B189D3 /* MyUILable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32C18E24857AA900B189D3 /* MyUILable.swift */; };
+		1D6912BC248CE66600D5B447 /* bg-sunny@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912AE248CE66600D5B447 /* bg-sunny@2x.png */; };
+		1D6912BD248CE66600D5B447 /* balloon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912AF248CE66600D5B447 /* balloon@2x.png */; };
+		1D6912BE248CE66600D5B447 /* balloon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B0248CE66600D5B447 /* balloon@3x.png */; };
+		1D6912BF248CE66600D5B447 /* bg-sunny@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B1248CE66600D5B447 /* bg-sunny@3x.png */; };
+		1D6912C0248CE66600D5B447 /* bg-sunny-cloud-1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B2248CE66600D5B447 /* bg-sunny-cloud-1@3x.png */; };
+		1D6912C1248CE66600D5B447 /* bg-sunny-cloud-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B3248CE66600D5B447 /* bg-sunny-cloud-3@2x.png */; };
+		1D6912C2248CE66600D5B447 /* bg-sunny-cloud-3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B4248CE66600D5B447 /* bg-sunny-cloud-3@3x.png */; };
+		1D6912C3248CE66600D5B447 /* bg-sunny-cloud-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B5248CE66600D5B447 /* bg-sunny-cloud-1@2x.png */; };
+		1D6912C4248CE66600D5B447 /* bg-sunny-cloud-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B6248CE66600D5B447 /* bg-sunny-cloud-4@2x.png */; };
+		1D6912C5248CE66600D5B447 /* bg-sunny-cloud-4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B7248CE66600D5B447 /* bg-sunny-cloud-4@3x.png */; };
+		1D6912C6248CE66600D5B447 /* bg-sunny-cloud-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B8248CE66600D5B447 /* bg-sunny-cloud-2@2x.png */; };
+		1D6912C7248CE66600D5B447 /* banner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912B9248CE66600D5B447 /* banner@3x.png */; };
+		1D6912C8248CE66600D5B447 /* banner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912BA248CE66600D5B447 /* banner@2x.png */; };
+		1D6912C9248CE66600D5B447 /* bg-sunny-cloud-2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6912BB248CE66600D5B447 /* bg-sunny-cloud-2@3x.png */; };
 		1DA24D062476DA240064BC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D052476DA240064BC7A /* AppDelegate.swift */; };
 		1DA24D082476DA240064BC7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D072476DA240064BC7A /* SceneDelegate.swift */; };
 		1DA24D0A2476DA240064BC7A /* DashBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA24D092476DA240064BC7A /* DashBoard.swift */; };
@@ -65,6 +79,20 @@
 
 /* Begin PBXFileReference section */
 		1D32C18E24857AA900B189D3 /* MyUILable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUILable.swift; sourceTree = "<group>"; };
+		1D6912AE248CE66600D5B447 /* bg-sunny@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny@2x.png"; sourceTree = "<group>"; };
+		1D6912AF248CE66600D5B447 /* balloon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon@2x.png"; sourceTree = "<group>"; };
+		1D6912B0248CE66600D5B447 /* balloon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon@3x.png"; sourceTree = "<group>"; };
+		1D6912B1248CE66600D5B447 /* bg-sunny@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny@3x.png"; sourceTree = "<group>"; };
+		1D6912B2248CE66600D5B447 /* bg-sunny-cloud-1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny-cloud-1@3x.png"; sourceTree = "<group>"; };
+		1D6912B3248CE66600D5B447 /* bg-sunny-cloud-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny-cloud-3@2x.png"; sourceTree = "<group>"; };
+		1D6912B4248CE66600D5B447 /* bg-sunny-cloud-3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny-cloud-3@3x.png"; sourceTree = "<group>"; };
+		1D6912B5248CE66600D5B447 /* bg-sunny-cloud-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny-cloud-1@2x.png"; sourceTree = "<group>"; };
+		1D6912B6248CE66600D5B447 /* bg-sunny-cloud-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny-cloud-4@2x.png"; sourceTree = "<group>"; };
+		1D6912B7248CE66600D5B447 /* bg-sunny-cloud-4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny-cloud-4@3x.png"; sourceTree = "<group>"; };
+		1D6912B8248CE66600D5B447 /* bg-sunny-cloud-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny-cloud-2@2x.png"; sourceTree = "<group>"; };
+		1D6912B9248CE66600D5B447 /* banner@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner@3x.png"; sourceTree = "<group>"; };
+		1D6912BA248CE66600D5B447 /* banner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner@2x.png"; sourceTree = "<group>"; };
+		1D6912BB248CE66600D5B447 /* bg-sunny-cloud-2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-sunny-cloud-2@3x.png"; sourceTree = "<group>"; };
 		1DA24D022476DA240064BC7A /* CustomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA24D052476DA240064BC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DA24D072476DA240064BC7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +171,27 @@
 			path = CustomObjects;
 			sourceTree = "<group>";
 		};
+		1D6912AD248CE66600D5B447 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				1D6912AE248CE66600D5B447 /* bg-sunny@2x.png */,
+				1D6912AF248CE66600D5B447 /* balloon@2x.png */,
+				1D6912B0248CE66600D5B447 /* balloon@3x.png */,
+				1D6912B1248CE66600D5B447 /* bg-sunny@3x.png */,
+				1D6912B2248CE66600D5B447 /* bg-sunny-cloud-1@3x.png */,
+				1D6912B3248CE66600D5B447 /* bg-sunny-cloud-3@2x.png */,
+				1D6912B4248CE66600D5B447 /* bg-sunny-cloud-3@3x.png */,
+				1D6912B5248CE66600D5B447 /* bg-sunny-cloud-1@2x.png */,
+				1D6912B6248CE66600D5B447 /* bg-sunny-cloud-4@2x.png */,
+				1D6912B7248CE66600D5B447 /* bg-sunny-cloud-4@3x.png */,
+				1D6912B8248CE66600D5B447 /* bg-sunny-cloud-2@2x.png */,
+				1D6912B9248CE66600D5B447 /* banner@3x.png */,
+				1D6912BA248CE66600D5B447 /* banner@2x.png */,
+				1D6912BB248CE66600D5B447 /* bg-sunny-cloud-2@3x.png */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
 		1DA24CF92476DA240064BC7A = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +250,7 @@
 		1DA24D272477FA850064BC7A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1D6912AD248CE66600D5B447 /* animation */,
 				1DD9C412248B7596004B5EED /* ListIcon */,
 				1DA24D462477FC1E0064BC7A /* bottomTab */,
 			);
@@ -349,26 +399,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6912C4248CE66600D5B447 /* bg-sunny-cloud-4@2x.png in Resources */,
 				1DA24D3F2477FA960064BC7A /* user@3x.png in Resources */,
 				1DA24D452477FBB00064BC7A /* browser@2x.png in Resources */,
+				1D6912C2248CE66600D5B447 /* bg-sunny-cloud-3@3x.png in Resources */,
+				1D6912C0248CE66600D5B447 /* bg-sunny-cloud-1@3x.png in Resources */,
 				1DD9C42F248B75C6004B5EED /* summericons_100px_05@3x.png in Resources */,
 				1DD9C42B248B75C6004B5EED /* summericons_100px_02@2x.png in Resources */,
 				1DD9C437248B75C6004B5EED /* summericons_100px_00@2x.png in Resources */,
 				1DD9C42D248B75C6004B5EED /* summericons_100px_07@2x.png in Resources */,
+				1D6912C5248CE66600D5B447 /* bg-sunny-cloud-4@3x.png in Resources */,
 				1DA24D342477FA960064BC7A /* gear@3x.png in Resources */,
+				1D6912BD248CE66600D5B447 /* balloon@2x.png in Resources */,
 				1DA24D3E2477FA960064BC7A /* gear@2x.png in Resources */,
+				1D6912BF248CE66600D5B447 /* bg-sunny@3x.png in Resources */,
 				1DD9C42E248B75C6004B5EED /* summericons_100px_04@3x.png in Resources */,
 				1DA24D442477FBB00064BC7A /* browser.png in Resources */,
+				1D6912BE248CE66600D5B447 /* balloon@3x.png in Resources */,
 				1DA24D122476DA260064BC7A /* LaunchScreen.storyboard in Resources */,
+				1D6912C3248CE66600D5B447 /* bg-sunny-cloud-1@2x.png in Resources */,
 				1DD9C439248B75C6004B5EED /* summericons_100px_08@3x.png in Resources */,
 				1DD9C430248B75C6004B5EED /* summericons_100px_03@3x.png in Resources */,
 				1DA24D392477FA960064BC7A /* user.png in Resources */,
+				1D6912C6248CE66600D5B447 /* bg-sunny-cloud-2@2x.png in Resources */,
 				1DA24D382477FA960064BC7A /* gear.png in Resources */,
+				1D6912BC248CE66600D5B447 /* bg-sunny@2x.png in Resources */,
 				1DD9C432248B75C6004B5EED /* summericons_100px_08@2x.png in Resources */,
 				1DA24D432477FBB00064BC7A /* browser@3x.png in Resources */,
+				1D6912C1248CE66600D5B447 /* bg-sunny-cloud-3@2x.png in Resources */,
 				1DD9C42C248B75C6004B5EED /* summericons_100px_01@2x.png in Resources */,
+				1D6912C7248CE66600D5B447 /* banner@3x.png in Resources */,
 				1DD9C42A248B75C6004B5EED /* summericons_100px_01@3x.png in Resources */,
 				1DA24D3D2477FA960064BC7A /* clipboard@2x.png in Resources */,
+				1D6912C8248CE66600D5B447 /* banner@2x.png in Resources */,
 				1DD9C427248B75C6004B5EED /* summericons_100px_06@2x.png in Resources */,
 				1DD9C429248B75C6004B5EED /* summericons_100px_02@3x.png in Resources */,
 				1DD9C434248B75C6004B5EED /* summericons_100px_05@2x.png in Resources */,
@@ -383,6 +446,7 @@
 				1DD9C431248B75C6004B5EED /* summericons_100px_00@3x.png in Resources */,
 				1DA24D3A2477FA960064BC7A /* user@2x.png in Resources */,
 				1DD9C435248B75C6004B5EED /* summericons_100px_04@2x.png in Resources */,
+				1D6912C9248CE66600D5B447 /* bg-sunny-cloud-2@3x.png in Resources */,
 				1DA24D0D2476DA240064BC7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
