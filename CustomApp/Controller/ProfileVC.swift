@@ -30,7 +30,7 @@ class ProfileVC: BaseVC {
     let tableView = UITableView()
     let rowHeight:CGFloat = 60
     
-    var setAlert = Helper()
+//    var setAlert = Helper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class ProfileVC: BaseVC {
         //        self.ta
         
         
-        isTabBarShow = false
+    //    isTabBarShow = false
         self.navigationController!.navigationBar.isHidden = true
         
         

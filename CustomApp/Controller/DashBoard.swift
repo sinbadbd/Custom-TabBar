@@ -56,17 +56,18 @@ class DashBoard: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        resetBase()
         // setupBottomTabBar()
-        isTabBarShow = true
-        print(isTabBarShow)
+    //    isTabBarShow = true
+     //   print(isTabBarShow)
         //setupLoginUI()
-        
+        setupBottomTabBar()
         
         self.navigationController!.navigationBar.isHidden = false
     }
     override func viewWillAppear(_ animated: Bool) {
         
-        isTabBarShow = true
+     ///   isTabBarShow = true
         // if saveAnimation == true {
         
         self.setupLoginUI()
@@ -249,15 +250,29 @@ class DashBoard: BaseVC {
     
     func showAlertMessage(){
         self.view.addSubview(self.alerView)
-        self.alerView.anchor(top: self.view.safeAreaLayoutGuide.topAnchor,
+        self.alerView.anchor(top: self.view.topAnchor,
                              leading: self.view.leadingAnchor,
                              bottom: self.view.bottomAnchor,
                              trailing: self.view.trailingAnchor,
                              padding: .init(),
                              size: .init(width: self.view.frame.width,
                                          height: self.alerView.frame.height)
-        )
+        ) 
         
+    }
+    
+    func setupBottomTabBar(){
+        view.addSubview(bottomTab)
+        bottomTab.translatesAutoresizingMaskIntoConstraints = false
+        //bottomTab.backgroundColor = .gray
+        bottomTab.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        bottomTab.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        bottomTab.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        if #available(iOS 11.0, *) {
+            bottomTab.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        } else {
+            bottomTab.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        }
     }
 }
 

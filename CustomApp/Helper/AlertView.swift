@@ -120,36 +120,36 @@ class AlertView: UIView {
     
     
     
-    func showAlertMessage(){
-        print("show message")
-        //        self.addSubview(AlertView .addSubview(superview))
-        //        self.didAddSubview(superview.autoresizesSubviews)
-        //        addSubview(self)
-        // if superview != nil {
-        self.addSubview(.init(frame: .infinite))
-        self.anchor(top: self.superview?.safeAreaLayoutGuide.topAnchor,
-                    leading: self.superview?.leadingAnchor,
-                    bottom: self.superview?.bottomAnchor,
-                    trailing: self.superview?.trailingAnchor,
-                    padding: .init(),
-                    size: .init(width:self.frame.width, height: self.frame.height))
-        
-        //    }
-        
-        //        UIApplication.shared.keyWindow?.addSubview(mainContainer)
-        //        UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-        //        UIApplication.shared.windows.a
-        
-        //        UIApplication.shared.windows.first { $0.isKeyWindow }
-        if let app = UIApplication.shared.delegate as? AppDelegate{
-            //            MBProgressHUD.show(text, view:window)
-            addSubview(mainContainer)
-            //            app.addS
-        }
-        
-        
-        
-    }
+//    func showAlertMessage(){
+//        print("show message")
+//        //        self.addSubview(AlertView .addSubview(superview))
+//        //        self.didAddSubview(superview.autoresizesSubviews)
+//        //        addSubview(self)
+//        // if superview != nil {
+//        self.addSubview(.init(frame: .infinite))
+//        self.anchor(top: self.superview?.safeAreaLayoutGuide.topAnchor,
+//                    leading: self.superview?.leadingAnchor,
+//                    bottom: self.superview?.bottomAnchor,
+//                    trailing: self.superview?.trailingAnchor,
+//                    padding: .init(),
+//                    size: .init(width:self.frame.width, height: self.frame.height))
+//        
+//        //    }
+//        
+//        //        UIApplication.shared.keyWindow?.addSubview(mainContainer)
+//        //        UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+//        //        UIApplication.shared.windows.a
+//        
+//        //        UIApplication.shared.windows.first { $0.isKeyWindow }
+////        if let app = UIApplication.shared.delegate as? AppDelegate{
+////            //            MBProgressHUD.show(text, view:window)
+////            addSubview(mainContainer)
+////            //            app.addS
+////        }
+////
+//        
+//        
+//    }
     
     
     required init?(coder: NSCoder) {

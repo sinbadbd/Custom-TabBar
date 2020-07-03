@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HorizontalItemList: UIScrollView, UIScrollViewDelegate {
+class HorizontalItemList: UIScrollView {
     
     var didSelectItem : ((_ index:Int) ->())?
     
