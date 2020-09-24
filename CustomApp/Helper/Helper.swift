@@ -56,13 +56,13 @@ let btnColorBlue = colorBlue
 let txtColorBlue = colorBlue
 
 
-func getAttributedText(string:String, font:UIFont, color:UIColor, lineSpace:Float, alignment:NSTextAlignment) -> NSMutableAttributedString{
+func getAttributedText(string:String? = nil, font:UIFont?=nil, color:UIColor?=nil, lineSpace:Float?=nil, alignment:NSTextAlignment?=nil) -> NSMutableAttributedString{
     let textStyle = NSMutableParagraphStyle()
-    textStyle.alignment=alignment
-    textStyle.lineSpacing=CGFloat(lineSpace)
+    textStyle.alignment=alignment ?? .left
+    textStyle.lineSpacing=CGFloat(lineSpace ?? 5)
     //paragraphStyle.lineBreakMode = NSLineBreakMode.byWordWrapping
     let aMutableString = NSMutableAttributedString(
-        string: string,
+        string: string ?? "",
         attributes:[NSAttributedString.Key.font:font,NSAttributedString.Key.paragraphStyle:textStyle,NSAttributedString.Key.foregroundColor:color])
     return aMutableString
 }

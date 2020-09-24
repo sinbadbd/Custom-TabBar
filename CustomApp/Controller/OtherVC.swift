@@ -17,8 +17,27 @@ class OtherVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-        setupScrollView()
+        view.backgroundColor = .white
+        
+        let ar = [2,2,323,23]
+        let y = 20
+        let x = 10
+        for i in 0..<5{
+            
+            let firstFrame = CGRect(x: x, y: Int(self.view.frame.origin.y+100)+i*y, width: Int(self.view.frame.size.width), height: 150)
+              let firstView = UIView(frame: firstFrame)
+            firstView.backgroundColor = UIColor.red
+              view.addSubview(firstView)
+//
+//              let secondFrame = CGRect(x: 20, y: 30, width: 50, height: 50)
+//              let secondView = UIView(frame: secondFrame)
+//              secondView.backgroundColor = UIColor.green
+//              firstView.addSubview(secondView)
+//            i+=1
+           // i+=1
+        }
+        
+       // setupScrollView()
     }
     
     func setupScrollView(){

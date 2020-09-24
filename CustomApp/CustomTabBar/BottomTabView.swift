@@ -188,7 +188,7 @@ class BottomTabView: UIView{
     
     @objc func handleSetting(){
            print("1")
-        let vc = SettingsVC()
+        let vc = ClassRoomVc()
         (superview?.next as? UIViewController)?.navigationController?.pushViewController(vc, animated: true)
     }
     

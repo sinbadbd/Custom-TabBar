@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import PopupDialogBox
 
 class DashBoard: BaseVC {
     
@@ -53,6 +54,7 @@ class DashBoard: BaseVC {
     
     var saveAnimation = true
     
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -61,6 +63,7 @@ class DashBoard: BaseVC {
     //    isTabBarShow = true
      //   print(isTabBarShow)
         //setupLoginUI()
+        
         setupBottomTabBar()
         
         self.navigationController!.navigationBar.isHidden = false
