@@ -226,7 +226,7 @@ class OtherVC: UIViewController {
         
         for item in data {
             print(item)
-            var stringArrayCleaned = data.description.replacingOccurrences(of: "", with: "").replacingOccurrences(of: ",", with: ",").replacingOccurrences(of: "[", with: "").replacingOccurrences(of: "]", with: "").replacingOccurrences(of: " ", with: "")
+            let stringArrayCleaned = data.description.replacingOccurrences(of: "", with: "").replacingOccurrences(of: ",", with: ",").replacingOccurrences(of: "[", with: "").replacingOccurrences(of: "]", with: "").replacingOccurrences(of: " ", with: "")
 
             showPopup()
             popupView.showMessage(titleText: "\(stringArrayCleaned)", detailsText:  "gameData.details", offerText:  "gameData.offer",  popupType: .bestWish)
