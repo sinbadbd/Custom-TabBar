@@ -15,29 +15,66 @@ class OtherVC: UIViewController {
     
         var popupView = PopupView()
     
+    let internetBubbleView = UIView()
+    
+    let list = [3,2,1,4,1,2,6,5,10,8,0]
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        getIndex()
+        setupScrollView()
+  
+    }
+    func getIndex(){
         
-        let ar = [2,2,323,23]
-        let y = 20
-        let x = 10
-        for i in 0..<5{
-            
-            let firstFrame = CGRect(x: x, y: Int(self.view.frame.origin.y+100)+i*y, width: Int(self.view.frame.size.width), height: 150)
-              let firstView = UIView(frame: firstFrame)
-            firstView.backgroundColor = UIColor.red
-              view.addSubview(firstView)
-//
-//              let secondFrame = CGRect(x: 20, y: 30, width: 50, height: 50)
-//              let secondView = UIView(frame: secondFrame)
-//              secondView.backgroundColor = UIColor.green
-//              firstView.addSubview(secondView)
-//            i+=1
-           // i+=1
+        internetBubbleView.backgroundColor = .red
+        internetBubbleView.frame = CGRect(x: 0, y: 100, width: view.frame.width-20, height: 500)
+        view.addSubview(internetBubbleView)
+    
+//        @discardableResult
+        let internetData = mergeSort(arr: list)
+        if internetData.count > 0 {
+           
+            //print("internertList:\(self.internetData)")
+            var btnCounter:Int=0
+            let paddingX=13
+            let paddingY=10
+            let column=4
+            let btnWidth=Int(Float(self.internetBubbleView.frame.size.width-CGFloat((paddingX*column-1)))/Float(column))//50//Float(self.sizeBtnView.frame.size.width)/Float(column)//
+            let btnHeight=35
+            let rows=ceil(Double(internetData.count)/Double(column))
+            //print(rows)
+            for anotherNo  in 0..<Int(rows) {
+                for number  in 0..<column {
+                    if btnCounter<internetData.count {
+                        let info = internetData[btnCounter]
+                        let bubbleBtn = UIButton(frame: CGRect(x: (paddingX+btnWidth)*number, y: (paddingY+btnHeight)*anotherNo, width: btnWidth, height: btnHeight))
+                        
+                        bubbleBtn.tag = info//internetStartingTag+btnCounter
+                        bubbleBtn.backgroundColor = UIColor.green
+                        bubbleBtn.layer.cornerRadius = 18
+                        bubbleBtn.layer.borderWidth = 1
+                        bubbleBtn.layer.borderColor = UIColor.lightGray.cgColor
+                        bubbleBtn.setTitleColor(UIColor.black, for: .normal)
+ 
+                        bubbleBtn.setTitle("\(info)", for: UIControl.State.normal)
+                    
+                        //shadowForViewLight(shadow: bubbleBtn)
+                        //sizebtn.addTarget(self, action: "sizeButton:", for: UIControlEvents.touchUpInside)
+                        bubbleBtn.addTarget(self, action: #selector(self.bubbleBtn), for: UIControl.Event.touchUpInside)
+//                        //self.view.addSubview(sizebtn)
+//                        bubbleBtn.titleLabel?.textAlignment = .center
+//                        bubbleBtn.titleLabel?.font =  UIFont(name: appFontBold, size: 13*factX)
+                        self.internetBubbleView.addSubview(bubbleBtn)
+                        btnCounter+=1
+                    }
+                    
+                }
+            }
+            //let  viewH=rows*Double(btnHeight+paddingY)
+            //self.internetBubbleViewHCons.constant += CGFloat(viewH)
         }
-        
-       // setupScrollView()
+//        return internetData
     }
     
     func setupScrollView(){
@@ -119,14 +156,93 @@ class OtherVC: UIViewController {
         return button
     }()
     
+    
+    func mergeSort(arr: [Int])-> [Int] {
+        guard arr.count > 1 else {
+            return arr
+        }
+        
+        let midIndex = arr.count / 2
+        let leftArray = mergeSort(arr: Array(arr[0..<midIndex]))
+        let rightArray = mergeSort(arr: Array(arr[midIndex..<arr.count]))
+        return merge(left: leftArray, right: rightArray)
+    }
+
+    func merge(left: [Int], right: [Int])-> [Int] {
+        var leftIndex = 0
+        var rightIndex = 0
+        var orderArray : [Int] = []
+        
+        while leftIndex < left.count && rightIndex < right.count {
+            if (left[leftIndex] < right[rightIndex]) {
+                orderArray.append(left[leftIndex])
+                leftIndex += 1
+            } else if (right[rightIndex] < left[leftIndex]){
+                orderArray.append(right[rightIndex])
+                rightIndex += 1
+                
+            } else {
+                orderArray.append(left[leftIndex])
+                leftIndex += 1
+                orderArray.append(right[rightIndex])
+                rightIndex += 1
+            }
+        }
+        
+        while leftIndex < left.count {
+            orderArray.append(left[leftIndex])
+            leftIndex += 1
+        }
+        while rightIndex < right.count {
+            orderArray.append(right[rightIndex])
+            rightIndex += 1
+        }
+        
+        return orderArray
+        
+    }
+    
+    var dataArray = [Int]()
+    @objc func bubbleBtn(_ button: UIButton){
+//        print(button.tag)
+        
+        let item = button.tag
+        
+        dataArray.append(item)
+        button.backgroundColor = .white
+        
+        
+        
+//        showPopup()
+//        popupView.showMessage(titleText: "\(dataArray)", detailsText:  "gameData.details", offerText:  "gameData.offer",  popupType: .bestWish)
+ 
+        
+    }
+    
     @objc func tapTarge(){
         print("hi...")
-        showPopup()
+  
+        let data = dataArray
         
-        popupView.showMessage(titleText: "self.gameData.title", detailsText:  "gameData.details", offerText:  "gameData.offer",  popupType: .bestWish)
+        for item in data {
+            print(item)
+            var stringArrayCleaned = data.description.replacingOccurrences(of: "", with: "").replacingOccurrences(of: ",", with: ",").replacingOccurrences(of: "[", with: "").replacingOccurrences(of: "]", with: "").replacingOccurrences(of: " ", with: "")
+
+            showPopup()
+            popupView.showMessage(titleText: "\(stringArrayCleaned)", detailsText:  "gameData.details", offerText:  "gameData.offer",  popupType: .bestWish)
+            
+        }
         
-//        popupView.show
-//        let vc = DashBoard()
-//        navigationController?.pushViewController(vc, animated: true)
+        
+//        print(item)
+      
+        
+//        dataArray.forEach { item in
+//
+//            print(item)
+//            showPopup()
+//            popupView.showMessage(titleText: "\(item)", detailsText:  "gameData.details", offerText:  "gameData.offer",  popupType: .bestWish)
+//
+//        }
     }
 }
